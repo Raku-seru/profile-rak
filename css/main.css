@@ -76,7 +76,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 90px;
+    margin-top: 75px;
 }
 
 .slider .particels {
@@ -561,8 +561,9 @@ body {
 }
 
 #map {
-    width: 640px;
-    height: 360px;
+    margin: 0 auto;
+    width: 90%;
+    height: 320px;
     position: relative;
     outline: none;
 }
@@ -597,7 +598,7 @@ body {
     /* Slider*/
     .slider {
         height: calc(100vh - 80px);
-        margin-top: 80px;
+        margin-top: 60px;
     }
 
     .slider img {
@@ -644,7 +645,7 @@ body {
      /* Slider*/
      .slider {
         height: calc(100vh - 80px);
-        margin-top: 80px;
+        margin-top: 60px;
      }
 
     .slider .left-content {
