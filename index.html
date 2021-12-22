@@ -94,13 +94,11 @@
                                     <b class="is-visible">Raxel Adam Kamisik</b>
                                     <b>Web Developer</b>
                                     <b>Reporting Analyst</b>
-                                    <b>Technical Operation Support</b>
                                 </span>
                             </h1>
                         </div>
                         <p class="paragraph">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor <br>
-                            incididunt ut labore et dolore magna aliqua.
+                            Technical Operations support and Network Engineer since 2016
                         </p>
                         <a href="assets/cv.pdf" class="btn" download="CV - Raxel Adam Kamisik">
                             Download CV</a>
@@ -119,24 +117,23 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 col-md-12">
-                    <img src="img/man.png" alt="" class="img-fluid">
+                    <img src="img/main-profile.png" alt="" class="img-fluid">
                 </div>
                 <div class="col-lg-8 col-md-12 p-0">
                     <h2>About Me</h2>
                     <p>
-                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-                        doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
-                        veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
-                        voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
-                        consequuntur
+                        My name Raxel Adam Kamisik, born in West Java, Indonesia. I'm a undergraduate bachelor of
+                        Informatics Engineering student at University of Indraprasta PGRI, Jakarta.
+                        I'm first studied programming since 2019 with Java Language, and still working with my best
+                        to be Professional Software Developer and Back end Engineer.
                         <br><br>
 
                         magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam
                         est, qui dolorem ipsum quia dolor si voluptatem quia voluptas sit aspernatur aut
                         odit aut fugit, sed quia consequuntur
                     </p>
-                    <a href="#0" class="btn-1">Download CV</a>
-                    <a href="#0" class="btn-2">Portfolio</a>
+                    <a href="assets/cv.pdf" class="btn-1" download="CV - Raxel Adam Kamisik">Download CV</a>
+                    <a href="#0" clsss="btn-2">Portfolio</a>
                 </div>
             </div>
         </div>
@@ -230,7 +227,7 @@
                             <span class="counter">937</span>
                         </h3>
                         <div class="line mx-auto"></div>
-                        <h4>Projects Compleated</h4>
+                        <h4>Projects Completed</h4>
                     </div>
                 </div>
                 <!-- Box-3 -->
@@ -238,23 +235,34 @@
                     <div class="items">
                         <span class="fa fa-globe"></span>
                         <h3>
-                            <span class="counter">438</span>
+                            <span class="counter" id="count3"></span>
                         </h3>
                         <div class="line mx-auto"></div>
-                        <h4>Files Downloaded</h4>
+                        <h4>years of service</h4>
                     </div>
                 </div>
+                <script>
+                    var year1 = 2016;
+                    var year2 = new Date().getFullYear();
+                    document.getElementById("count3").innerHTML=year2 - year1;
+                </script>
                 <!-- Box-4 -->
                 <div class="col-lg-3 col-sm-6">
                     <div class="items">
                         <span class="fa fa-user-o"></span>
                         <h3>
-                            <span class="counter">5946</span>
+                            <span class="counter" id="count4"></span>
                         </h3>
                         <div class="line mx-auto"></div>
-                        <h4>Liens Of Code</h4>
+                        <h4>Days since first code</h4>
                     </div>
                 </div>
+                <script>
+                    var date1 = new Date('03/08/2021');
+                    var date2 = new Date();
+                    var day4 = Math.ceil((date2.getTime() - date1.getTime()) / (1000 * 3600 * 24));
+                    document.getElementById("count4").innerHTML=day4;
+                </script>
             </div>
         </div>
     </section>
@@ -499,7 +507,9 @@
 
                     <script>
                         var map = L.map('map').setView([-6.306929008755084, 106.97081877705867], 10);
-                        var marker = L.marker([-6.306929008755084, 106.97081877705867]).addTo(map);
+                        var marker = L.marker([-6.306929008755084, 106.97081877705867])
+                        .bindPopup('Home Location')
+                        .addTo(map);
                         var popup = L.popup()
                             .setLatLng([-6.184117880800744, 106.83159709145161])
                             .setContent("I'm working here !")
