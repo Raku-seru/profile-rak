@@ -76,7 +76,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 75px;
+    margin-top: 90px;
 }
 
 .slider .particels {
@@ -545,8 +545,6 @@ body {
 }
 .contact .info {
     padding-left: 40px;
-    color: #e0e0e0;
-    font-size: 18px;
 }
 
 .contact .info span {
@@ -560,13 +558,6 @@ body {
     color: #eee;
 }
 
-#map {
-    margin: 0 auto;
-    width: 90%;
-    height: 320px;
-    position: relative;
-    outline: none;
-}
 
 /* ==========================
    [10]. Footer
@@ -598,7 +589,7 @@ body {
     /* Slider*/
     .slider {
         height: calc(100vh - 80px);
-        margin-top: 60px;
+        margin-top: 80px;
     }
 
     .slider img {
@@ -645,7 +636,7 @@ body {
      /* Slider*/
      .slider {
         height: calc(100vh - 80px);
-        margin-top: 60px;
+        margin-top: 80px;
      }
 
     .slider .left-content {
