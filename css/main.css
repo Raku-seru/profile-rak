@@ -545,6 +545,8 @@ body {
 }
 .contact .info {
     padding-left: 40px;
+    color: #d6d6d6;
+    word-spacing: 2px;
 }
 
 .contact .info span {
@@ -558,6 +560,10 @@ body {
     color: #eee;
 }
 
+.contact .info a {
+    color: #e4bd52;
+    text-decoration: none;
+}
 
 /* ==========================
    [10]. Footer
