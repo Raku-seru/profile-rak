@@ -28,8 +28,8 @@ $(function () {
     //Counter Up
     $('.counter').counterUp({
         delay: 10,
-        time: 2000
+        time: 2000,
+        triggerOnce: true,
     });
 
 });
-
