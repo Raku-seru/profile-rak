@@ -499,6 +499,13 @@ body {
     border-color: #eee;
     border-width: 0.5px;
     display: block;
+    margin: 40px 0;
+}
+
+.profile .box .row .sticky {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 100;
 }
 
 /* ==========================
