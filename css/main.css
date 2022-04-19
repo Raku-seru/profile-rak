@@ -21,7 +21,12 @@ Table of contents
 
 body {
     font-family: 'Muli', sans-serif;
+    scroll-behavior: smooth;
     /* height: 5000px; */
+}
+
+i {
+    color: white;
 }
 
 /* ==========================
